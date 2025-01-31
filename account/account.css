@@ -1,0 +1,123 @@
+/* Account Page Styles */
+.profile-card {
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.avatar-wrapper {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+}
+
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.btn-avatar-edit {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  padding: 0;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.username {
+  color: #2c3e50;
+  font-weight: 600;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.points-display {
+  background: #f8f9fa;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.points-icon {
+  color: #ffc107;
+  font-size: 1.25rem;
+}
+
+.points-value {
+  color: #2c3e50;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.transaction-table {
+  --bs-table-striped-bg: #f8f9fa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.transaction-table thead {
+  background: #007bff;
+  color: white;
+}
+
+.transaction-table th {
+  font-weight: 500;
+  border-bottom: none;
+}
+
+.transaction-table td {
+  vertical-align: middle;
+  padding: 1rem;
+}
+
+.transaction-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Status Badges */
+.transaction-status {
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.status-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.status-failed {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    margin-bottom: 2rem;
+  }
+
+  .transaction-table {
+    font-size: 0.9rem;
+  }
+
+  .points-display {
+    padding: 0.5rem 1rem;
+  }
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tài Khoản</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="account.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="../index.html"
+          ><img src="../assets/img/like.png" alt="like" />
+          <img src="../assets/img/pikachu.png" alt="Pika pika"
+        /></a>
+        <div class="d-flex align-items-center">
+          <span class="text-white me-3 d-none d-md-block"
+            >Xin chào, <span id="navUsername">Nguyễn Doãn Bảo Long</span></span
+          >
+          <button class="btn btn-light btn-sm" onclick="logout()">
+            Đăng xuất
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container py-5">
+      <div class="row g-4">
+        <!-- User Profile Section -->
+        <div class="col-lg-4">
+          <div class="card profile-card">
+            <div class="card-body text-center">
+              <div class="avatar-wrapper mb-3">
+                <img
+                  src="../assets/images/avatar-placeholder.jpg"
+                  class="avatar-img"
+                  alt="User Avatar"
+                  id="userAvatar"
+                />
+                <button
+                  class="btn btn-sm btn-avatar-edit"
+                  onclick="changeAvatar()"
+                >
+                  <i class="bi bi-camera"></i>
+                </button>
+              </div>
+              <h3 class="username" id="username">Nguyễn Doãn Bảo Long</h3>
+              <div class="points-display">
+                <i class="bi bi-star-fill points-icon"></i>
+                <span class="points-value" id="userPoints">1,250</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Transaction History -->
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title mb-4">Lịch sử giao dịch</h4>
+              <div class="table-responsive">
+                <table class="table transaction-table" id="transactionHistory">
+                  <thead>
+                    <tr>
+                      <th>Thời gian</th>
+                      <th>Loại</th>
+                      <th>Mô tả</th>
+                      <th class="text-end">Điểm</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- JS will populate this -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+    <!-- Account JS -->
+    <script src="account.js"></script>
+  </body>
+</html>

@@ -1,0 +1,84 @@
+/* tasks/tasks.css */
+.tasks {
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+
+.tasks h2 {
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 40px;
+  font-size: 2.2rem;
+}
+
+.task-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.task-type {
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.task-type.like {
+  background: #e6f3ff;
+  color: #0073e6;
+}
+
+.task-type.share {
+  background: #fff0e6;
+  color: #ff6600;
+}
+
+.task-reward {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.task-content {
+  color: #444;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.task-link {
+  display: inline-block;
+  color: #0073e6;
+  text-decoration: none;
+  margin-bottom: 15px;
+  transition: opacity 0.3s;
+}
+
+.task-link:hover {
+  opacity: 0.8;
+}
+
+.task-btn {
+  width: 100%;
+  padding: 12px;
+  background: #0073e6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.task-btn:hover {
+  background: #005bb5;
+}

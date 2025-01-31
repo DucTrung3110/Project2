@@ -1,0 +1,24 @@
+/* Request Page Styles */
+#requestsList .list-group-item {
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+
+#requestsList .list-group-item:hover {
+  transform: translateX(5px);
+  border-left-color: var(--primary-color);
+}
+
+#requestsList .badge {
+  font-size: 0.9em;
+  padding: 0.5em 0.75em;
+}
+
+#requestsList a {
+  color: var(--primary-color);
+  transition: opacity 0.3s;
+}
+
+#requestsList a:hover {
+  opacity: 0.8;
+}

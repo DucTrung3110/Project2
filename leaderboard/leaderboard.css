@@ -1,0 +1,51 @@
+/* leaderboard/leaderboard.css */
+.leaderboard {
+  padding: 50px 0;
+  background: #f8f9fa;
+}
+
+.leaderboard h2 {
+  text-align: center;
+  color: #0073e6;
+  margin-bottom: 40px;
+}
+
+.ranking-table {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  background: #0073e6;
+  color: white;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-row.gold {
+  background: #fff9e6;
+}
+
+.table-row.silver {
+  background: #f8f9fa;
+}
+
+.table-row span:first-child {
+  font-weight: bold;
+  color: #0073e6;
+}

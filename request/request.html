@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yêu Cầu Tương Tác</title>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="request.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <!-- Same navigation as other pages -->
+    </nav>
+
+    <main class="container py-5">
+      <div class="row">
+        <div class="col-md-8 mx-auto">
+          <!-- Request Form -->
+          <div class="card mb-4">
+            <div class="card-body">
+              <h2 class="card-title mb-4">Yêu cầu tương tác mới</h2>
+              <form id="requestForm">
+                <div class="mb-3">
+                  <label for="postUrl" class="form-label"
+                    >URL bài viết Facebook</label
+                  >
+                  <input
+                    type="url"
+                    class="form-control"
+                    id="postUrl"
+                    placeholder="https://facebook.com/your-post"
+                    required
+                  />
+                  <div class="invalid-feedback">Vui lòng nhập URL hợp lệ</div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="interactionType" class="form-label"
+                    >Loại tương tác</label
+                  >
+                  <select class="form-select" id="interactionType" required>
+                    <option value="like">Like</option>
+                    <option value="share">Share</option>
+                    <option value="comment">Comment</option>
+                  </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">
+                  Gửi yêu cầu
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <!-- Request List -->
+          <div class="card">
+            <div class="card-body">
+              <h3 class="card-title mb-4">Yêu cầu đang chờ</h3>
+              <div id="requestsList" class="list-group">
+                <!-- Requests will be loaded here -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Request JS -->
+    <script src="request.js"></script>
+  </body>
+</html>
